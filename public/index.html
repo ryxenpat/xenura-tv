@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+	<meta http-equiv="Surrogate-Control" content="max-age=0" />-->
+    <title>Xenura Radio</title>
+    <link rel="stylesheet" href="stylesheets/style-a.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.20.3/video-js.min.css">
+</head>
+
+<body>
+	<header>
+		<!--<a href="https://linktr.ee/xenura"></a>-->
+		<img src="/images/x-logo-ffffff-noglow-650x650.png" id="header-logo">
+		<!-- <h1 id="site-title">XENURA RADIO</h1> -->
+	</header>
+	<div id="main">
+		<div id="main-content-flex">
+			<div class="main-side">
+				<div id="help-box">
+    				<p style="margin:0;padding:12px 12px 12px 0;border-bottom: 1px solid rgba(255,255,255,0.5)">Welcome to Xenura TV</p>
+    				<p>This is a site built by Xenura, with a lot help from conkfromjonk. ChatGPT also helped out a lot too...<br>Here is a bunch of words to help me structure and format this helpbox that should have appeared ONLY after pressing the (?) button. If you can see this for any other reason, I'm in bed with your mother (and Jack is in bed with your father). Sorry bro.</p>
+    				<p>
+    				OKay now, here is a gigantic message. You should have to scroll down to see this in its entirety. As you scroll down further. You'll find that you can no longer see the introduction paragraph. You very likely can still see the comment about me being in bed with your mother in case this box had actually appeared without user intervention. By 'user intervention', I obviously mean you clicking on that little circle with the question mark in it (<img class="toggle" src="/svg/question-mark-white.svg" width="24" height="24" style="margin:0;padding:0;display:inline-block">).<br>I really hope the styling on that img didn't completely fuck the whole line up... I guess we'll see won't we. Also if you tried clicking on it, that won't work. I didn't bother to make a similar class to "toggle" which would style it the same and not have a hover function.<br>Oh yeah uh, also, I'm not actually in bed with your mother... Though I do love an older woman, I have a beautiful girlfriend who I love very much. She'll be an older woman one day anyway, so really, it's a win-win if you think about it. That being said, I can't actually speak for Conk however... I mean, he could be in bed with your Dad??? I don't know. Is your Dad into that kind of thing? Not that he'd probably share with you that information... openly anyway... unless of course he and your mother have some sort of arrangement where he's allowed to do that kind of thing. That, or maybe they're divorced... Sorry, that's a bit heavy. I'm guessing the divorce was probably because of the fact that your Dad wanted to sleep with other men, which might've just been too much for your mother to bear. Fair enough, I don't blame her. I'd probably be the same. If I was your Dad's wife of course...<br>Y'know, come to think of it actually, what if this is like that situation with Will Smith and his wife? Maybe he had "an entanglement". Only this time it was Will doing the entangling - better yet, your Dad! What IF the entanglee was CONK??? Holy shit man that's actually crazy. Damn you know I really hope your mother is okay after all that - I mean, assuming that she was not intially okay with it to begin with. If she was, then well, nice I guess? Your Dad gets to get freaky with Mr Conk and your mother is chill bill about it.<br>Wow, what a story huh? Do you think this box has enough content now? Also did you notice I started saying "Dad" instead of "Father", and yet the word "mother" remained consistent? I wonder why that is. Anyway. Here's some site stats I guess:
+    				</p>
+    				<div id="stat-sect" style="border-top: 1px solid rgba(255,255,255,0.5)">
+    					<p>
+    						Stream Stats
+    					</p>
+    					<table>
+    						<tr><th>Video</th><td><span id="stat-videostream-dot" style="margin:4px">●</span><span id="stat-videostream-state"></span></td></tr>
+    						<tr><th>Audio</th><td><span id="stat-audiostream-dot" style="margin:4px">●</span><span id="stat-audiostream-state"></span></td></tr>
+    					</table>
+    					<canvas id="audio-buffer-display" style="max-width:90%" height="20"></canvas>
+    				</div>
+    			</div>
+			</div>
+    		<div id="main-media-sect">
+    			<div id="content-frame">
+    	    		<!-- Start Streams Button
+    				This should only appear if the browser has blocked autoplay. By pressing it, user has enabled both video and audio streams.
+    				It will disappear afterwards. -->
+     				<div id="start-stream-button-div" style="display:none">
+    					<button>
+    						<img id="start-stream-ico" src="/svg/play-white.svg" width="64" height="64" alt="Allow Autoplay and Start Streams">
+    					</button>
+    					<table>
+    						<tr><td><span style="font-size:19px;font-weight:bold;color:#ffffff">Start Stream</span></td></tr>
+    						<tr><td><span>Your browser has blocked autoplay</span></td></tr>
+    					</table>
+    				</div>
+    				<video id="videoPlayer" class="video-js vjs-default-skin" autoplay></video>
+    				<!--<p id="stream-status"></p>-->
+    				<audio id="audioPlayer" autoplay preload="none"></audio>
+    				
+    			</div>
+    		</div>
+    		<div class="main-side">
+				<div id="chat-box">
+					<div id="chat-box-messages-frame" style="flex-grow:1">
+    					<ul id="messages"></ul>
+    				</div>
+    				<!--<button id="button-scroll-chat" style="display:none"><img src="/svg/chat-send-white.svg" width="24" height="24" alt="Scroll to newest chats"></button>-->
+    				<div id="chat-box-input-frame">
+    					<div id="chat-message-input-flex">
+    						<input id="chat-message-input" autocomplete="off" style="flex-grow:2">
+    						<button onclick="sendMessage()" id="button-send-chat">
+    							<img src="/svg/chat-send-white.svg" width="24" height="24" alt="Send chat">
+    						</button>
+    					</div>
+    					<p style="color:white;margin:0;opacity:.5">Press Enter to send messages</p>
+    				</div>
+    				<script src="/socket.io/socket.io.js"></script>
+				</div>
+			</div>
+    	</div>
+    </div>
+<!-- Button Section: Video controls, etc. -->
+    <div id="stream-bar">
+    	<div id="stream-bar-left" style="flex-grow:1">
+    		<button id="help-button" class="toggle">
+    			<img src="/svg/question-mark-white.svg" width="36" height="36">
+    		</button>
+    	</div>
+    	<div id="stream-bar-controls" style="flex-grow:2">
+    		<button id="mute-toggle" class="toggle">
+    			<img id="mute-toggle-icon" src="/svg/sound-off-white-solid.svg" width="32" height="32" alt="Toggle Sound">
+    		</button>
+    		<button id="fullscreen-enter" class="toggle">
+    			<img src="/svg/fullscreen-white.svg" width="32" height="32" alt="Enter Fullscreen">
+    		</button>
+    	</div>
+    	<div id="stream-bar-stats" style="flex-grow:1">
+    		<div id="stream_client_count_div">
+    			<img src="/svg/eye-white.svg" width="32" height="32" alt="Currently watching">
+    			<span id="stat-client-counter">NO DATA</span>
+    		</div id="stream_chat_button_div">
+    		<button id="chat-toggle" class="toggle">
+    			<img src="/svg/chat-white.svg" width="30" height="30" alt="Stream Chat">
+    			<span id="chat-message-counter">0</span>
+    		</button>
+    	</div>
+    </div>
+   	<!--<button id="fullscreen-exit" class="stickyButton">
+    	<img src="/svg/fullscreen-white.svg" width="32" height="32" alt="Exit Fullscreen">
+    </button>-->
+    <section id="stream-info-sect">
+    	<div id="stream-info-canvas">
+    		<div id="stream-info-flex" style="display:none">
+    		    <div id="coverart-div">
+    				<img id="cover-art">
+    			</div>
+    			<div id="metadata-div">
+    				<table id="metadata-list" style="text-align:left">
+    					<tr><td id="stream-info-status">Now Playing</span></td></tr>
+    					<tr><th>Title:</th><td id="m_title"></td></tr>
+    					<tr><th>Artist:</th><td id="m_artist"></td></tr>
+    					<tr><th>Album:</th><td id="m_album"></td></tr>
+    					<tr><th>Track No.:</th><td id="m_track"></td></tr>
+    					<tr><th>Year:</th><td id="m_year"></td></tr>
+    				</table>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+    <!-- SCRIPT SECTION START -->
+    <!-- VideoJS Reference MUST come before streamFunc.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.20.3/video.min.js"></script>
+    <script src="javascripts/index_streamFunc.js"></script>
+    <!-- SCRIPT SECTION END -->
+</body>
+<footer>
+<p>Hosted by Cloud53</p>
+</footer>
+</html>

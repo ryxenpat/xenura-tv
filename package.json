@@ -1,0 +1,21 @@
+{
+  "name": "webserver",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "^4.21.2",
+    "http-errors": "~1.6.3",
+    "jade": "^0.29.0",
+    "morgan": "~1.9.1",
+    "music-metadata": "^11.0.0",
+    "node-media-server": "^2.0.3",
+    "socket.io": "^4.8.1",
+    "stream": "^0.0.3",
+    "ws": "^8.18.1"
+  }
+}

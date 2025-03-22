@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+
+<svg
+   width="800"
+   height="800"
+   viewBox="0 0 24 24"
+   fill="none"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="chat-white.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.42875"
+     inkscape:cx="399.65004"
+     inkscape:cy="400"
+     inkscape:window-width="2560"
+     inkscape:window-height="1361"
+     inkscape:window-x="-9"
+     inkscape:window-y="41"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <defs
+     id="defs1" />
+  <path
+     fill-rule="evenodd"
+     clip-rule="evenodd"
+     d="m 17.000002,10.207339 c 0,-0.5522801 -0.44772,-1.0000002 -1,-1.0000002 h -0.01 c -0.55228,0 -1,0.4477201 -1,1.0000002 0,0.5523 0.44772,1 1,1 h 0.01 c 0.55228,0 1,-0.4477 1,-1 z m -4,0 c 0,-0.5522801 -0.4477,-1.0000002 -1,-1.0000002 h -0.01 c -0.5523,0 -1,0.4477201 -1,1.0000002 0,0.5523 0.4477,1 1,1 h 0.01 c 0.5523,0 1,-0.4477 1,-1 z M 8.0000022,9.2073388 c 0.5523,0 1,0.4477201 1,1.0000002 0,0.5523 -0.4477,1 -1,1 h -0.01 c -0.5523,0 -1,-0.4477 -1,-1 0,-0.5522801 0.4477,-1.0000002 1,-1.0000002 z m 9.0658298,-7 c -0.02187,0 -0.04382,0 -0.06583,0 H 6.9342022 c -0.8865,-5e-5 -1.6503002,-9e-5 -2.2620002,0.08215 -0.6555,0.08813 -1.2839,0.28687 -1.7935,0.79653 -0.5097,0.50967 -0.7084,1.13802 -0.7966,1.79353 -0.0822,0.61167 -0.0822,1.37549 -0.0821,2.26199 v 6.1316002 c -10e-5,0.8865 -10e-5,1.6503 0.0821,2.262 0.0882,0.6555 0.2869,1.2839 0.7966,1.7935 0.5096,0.5097 1.138,0.7084 1.7935,0.7966 0.6117,0.0822 1.3755002,0.0822 2.2620002,0.0821 h 3.0657998 c 0.1136,0 0.2243,0.036 0.3162,0.1028 l 4.40812,3.2059 c 0.9471,0.6888 2.27568,0.0123 2.27568,-1.1588 v -2.1499 c 0.77396,0 1.55882,0.0213 2.32779,-0.0821 0.65551,-0.0882 1.28386,-0.2869 1.79353,-0.7966 0.50966,-0.5096 0.7084,-1.138 0.79653,-1.7935 0.08224,-0.6117 0.0822,-1.3755 0.08215,-2.262 V 7.2073388 c 0,-0.02201 0,-0.04396 0,-0.06583 5e-5,-0.88648 9e-5,-1.6503 -0.08215,-2.26196 -0.08813,-0.65551 -0.28687,-1.28386 -0.79653,-1.79353 -0.50967,-0.50966 -1.13802,-0.7084 -1.79353,-0.79653 -0.61166,-0.08224 -1.37548,-0.0822 -2.26196,-0.08215 z"
+     fill="#ffffff"
+     id="path1"
+     style="fill:#ffffff;fill-opacity:1;stroke-width:0.99999;stroke-dasharray:none" />
+</svg>
