@@ -1,0 +1,6 @@
+node_modules
+bin
+
+# Contents in these folders must be ignored but not the folders themselves.
+public/hls/*
+public/images/coverart/*
